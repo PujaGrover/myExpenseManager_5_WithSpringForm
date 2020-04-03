@@ -49,15 +49,15 @@
 					<div class="form-group">
 						<label for="incomeDate">Date</label> <span>&nbsp;</span>
 						<form:input class="form-control-sm" type="date" path="incomeDate"
-							placeholder="date" />
+							placeholder="date" required="true" />
 						<p>
 							<form:errors path="incomeDate" class="error" />
-						</p>
+						</p> 
 					</div>
 					<div class="form-group">
 						<label for="incomeAmount">Income Amount</label> <span>&nbsp;</span>
 						<form:input class="form-control-sm" type="number"
-							path="incomeAmount" placeholder="amount" />
+							path="incomeAmount" placeholder="amount" required="true" />
 						<p>
 							<form:errors path="incomeAmount" class="error" />
 						</p>
@@ -65,7 +65,7 @@
 					<div class="form-group">
 						<label for="incomeDescription">Description</label> <span>&nbsp;</span>
 						<form:textarea class="form-control-sm" rows="3"
-							placeholder="description" path="incomeDescription" />
+							placeholder="description" path="incomeDescription" required="true" />
 						<p>
 							<form:errors path="incomeDescription" class="error" />
 						</p>

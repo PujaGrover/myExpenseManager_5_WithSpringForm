@@ -52,7 +52,7 @@
 					<div class="form-group">
 						<label for="expenseCategoryName">Expense Category</label>
 						<form:input path="expenseCategoryName" type="text"
-							class="form-control-sm" placeholder="new expense category" />
+							class="form-control-sm" placeholder="new expense category" required="true" />
 						<p>
 							<form:errors path="expenseCategoryName" class="error" />
 						</p>

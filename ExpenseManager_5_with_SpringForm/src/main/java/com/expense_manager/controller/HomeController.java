@@ -112,7 +112,8 @@ public class HomeController {
 	
 	//VALIDATE AND SAVE USER FILLING SIGNUP FORM TO DATABASE
 	@PostMapping("/saveSignUp")
-	public String saveSignUpForm(@Valid @ModelAttribute("newUserDetail") UserDetail newUserDetail, BindingResult bindingResult, Model model) {
+	public String saveSignUpForm(@Valid @ModelAttribute("newUserDetail") UserDetail newUserDetail
+								, BindingResult bindingResult, Model model) {
 		
 		if(bindingResult.hasErrors()) {
 			return "SignUp";
@@ -131,7 +132,7 @@ public class HomeController {
 			}else if(u.getUserName().equals(newUserDetail.getUserName()) || u.getUserEmail().equals(newUserDetail.getUserEmail())){
 				userExists = true;
 				System.out.println("Username or email already exist.");
-				model.addAttribute("errorMessage", "Username or email is already registered. Please sign up with different username/email OR go to Login");
+				model.addAttribute("errorMessage", "Username or email is already registered. Please sign up with different credentials or go to Login");
 				return "SignUp";
 			}	
 		}
@@ -151,6 +152,8 @@ public class HomeController {
 			roleAdmin.setRoleName("admin");
 			roleAdmin.setAccessLevel("complete");
 			roleService.save(roleAdmin);
+			
+			
 			userDetailService.save(newUserDetail);
 			System.out.println("User Created and saved to the database");
 			System.out.println(newUserDetail.toString());

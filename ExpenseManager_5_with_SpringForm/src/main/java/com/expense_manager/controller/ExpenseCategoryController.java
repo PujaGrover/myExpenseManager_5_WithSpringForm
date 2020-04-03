@@ -54,10 +54,11 @@ public class ExpenseCategoryController {
 		expenseCategoryService.save(newExpenseCategory);
 		System.out.println(newExpenseCategory.toString());
 
-		model.addAttribute("message", "New Expense Category is added to the existing list.");
+		//model.addAttribute("message", "New Expense Category is added to the existing list.");
 		System.out.println("New Expense Category is added to the existing list.");
 		// return back ExpenseCategory.jsp
 		return "redirect:/expenseCategory";
+		
 	}
 
 	// ABOVE METHOD IS SAME AS THIS ONE(INSTEAD OF MODELANDVIEW, MODEL OBJECT IS

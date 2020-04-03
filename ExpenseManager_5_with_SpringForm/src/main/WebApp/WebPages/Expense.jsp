@@ -49,7 +49,7 @@
 					<div class="form-group">
 						<label for="expenseDate">Date</label> <span>&nbsp;</span>
 						<form:input class="form-control-sm" type="date" path="expenseDate"
-							placeholder="date" />
+							placeholder="date" required="true" />
 						<p>
 							<form:errors path="expenseDate" class="error" />
 						</p>
@@ -57,7 +57,7 @@
 					<div class="form-group">
 						<label for="expenseAmount">Expense Amount</label> <span>&nbsp;</span>
 						<form:input class="form-control-sm" type="number"
-							path="expenseAmount" placeholder="amount" />
+							path="expenseAmount" placeholder="amount" required="true"  />
 						<p>
 							<form:errors path="expenseAmount" class="error" />
 						</p>
@@ -65,7 +65,7 @@
 					<div class="form-group">
 						<label for="expenseDescription">Description</label> <span>&nbsp;</span>
 						<form:textarea class="form-control-sm" rows="3"
-							path="expenseDescription" placeholder="description" />
+							path="expenseDescription" placeholder="description" required="true"  />
 						<p>
 							<form:errors path="expenseDescription" class="error" />
 						</p>

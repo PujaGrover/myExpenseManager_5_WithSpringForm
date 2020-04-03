@@ -96,24 +96,6 @@ public class ExpenseController {
 		return "ExpenseReport";
 	}
 
-//	// SHOW ALL EXPENSES IN GIVEN MONTH AND YEAR
-//	@PostMapping("/expenseReport")
-//	public String getExpenseByYearAndMonth(@Valid @ModelAttribute("newExpense") Expense newExpense, Model model,
-//			BindingResult bindingResult) {
-//
-//		System.out.println("Inside getExpenseByYearAndMonth method in ExpenseController");
-//		
-//		if (bindingResult.hasErrors()) {
-//			System.out.println("Binding Result has errors!!");
-//			return null;
-//		}
-//		
-//		List<Expense> allExpensesByYearAndMonth = expenseService.getByYearAndMonth(newExpense.getExpenseDate());
-//		model.addAttribute("allExpensesByYearAndMonth", allExpensesByYearAndMonth);
-//		
-//		return "ExpenseReport";
-//	}
-
 	// GETTING ALL EXPENSES FROM DATABASE
 	@GetMapping("/allExpenses")
 	public String allExpenses(Model model) {

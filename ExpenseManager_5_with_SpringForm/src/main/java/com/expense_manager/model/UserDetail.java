@@ -25,19 +25,19 @@ public class UserDetail {
 	
 	@Basic
 	@Column(name = "first_name", nullable = false, length = 50)
-	@Size(min=2, max=25,  message="Name must be between 2 and 16 characters long.")
+	@Size(min=2, max=25,  message="First Name must be between 2 and 16 characters long.")
 	@NotBlank(message="First Name is required.")
 	private String firstName;
 	
 	@Basic
 	@Column(name = "last_name", nullable = false, length = 50)
-	@Size(min=2, max=25,  message="Name must be between 2 and 16 characters long.")
+	@Size(min=2, max=25,  message="Last Name must be between 2 and 16 characters long.")
 	@NotBlank(message="Last Name is required.")
 	private String lastName;
 	
 	@Basic
-	@Column(name = "user_name", nullable = false, length = 50)
-	@Size(min=2, max=25,  message="Name must be between 2 and 25 characters long.")
+	@Column(name = "user_name", nullable = false, length = 50, unique = true)
+	@Size(min=2, max=25,  message="User Name must be between 2 and 25 characters long.")
 	@NotBlank(message="User Name is required.")
 	private String userName;
 	

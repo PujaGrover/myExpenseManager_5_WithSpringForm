@@ -52,7 +52,7 @@
 					<div class="form-group">
 						<label for="incomeSourceName">Income Source</label>
 						<form:input path="incomeSourceName" type="text"
-							class="form-control-sm" placeholder="new income source" />
+							class="form-control-sm" placeholder="new income source" required="true" />
 						<p>
 							<form:errors path="incomeSourceName" class="error" />
 						</p>

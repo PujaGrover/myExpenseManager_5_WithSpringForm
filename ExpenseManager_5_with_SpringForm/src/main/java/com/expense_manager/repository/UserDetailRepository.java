@@ -12,7 +12,7 @@ import com.expense_manager.model.UserDetail;
 @Repository
 public interface UserDetailRepository extends JpaRepository<UserDetail, Integer> {
 
-	// hql query to query database table user_detail of UserDetail class binding 
+	// jpql/hql query to query database table user_detail of UserDetail class binding 
 	// with searchUserName method
 	@Query(value = "SELECT u FROM UserDetail u where u.userName = :userName")
 	public UserDetail searchUserName(@Param("userName") String userName);

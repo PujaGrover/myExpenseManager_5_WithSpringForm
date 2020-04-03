@@ -57,21 +57,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<!--   
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link disabled" href="">Home</a>
-						</li>
-						 <!-- Removing configure. It appears only when admin logs in admin_index.html
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="configure">Configure</a>
-                        </li>
-                        
-						<li class="nav-item"><a class="nav-link" href="signUp">SignUp</a>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="login">Login</a>
-						</li>
-					</ul>
-					 -->
+					
 				</div>
 			</div>
 		</nav>
@@ -85,7 +71,7 @@
 			</div>	
 			<div class="form-container" align="center">
 			<div>
-				<font color="red">${errorMessage}</font>
+			 <p style="color: red;">${errorMessage}</p>
 			</div>
 
 				<form:form action="saveSignUp" name="signUp" method="post"
