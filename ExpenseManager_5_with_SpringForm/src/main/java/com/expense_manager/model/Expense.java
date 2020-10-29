@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+//import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -43,6 +44,7 @@ public class Expense {
 	@JoinColumn(name="expense_category_id")
 	private ExpenseCategory expenseCategory;
 
+	 
 //	//Foreign Key - mapped by useID
 //    @ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
 //					CascadeType.DETACH, CascadeType.REFRESH})

@@ -14,7 +14,7 @@ import com.expense_manager.filters.AuthenticationFilter;
 
 /**
  * The first step in producing a deployable war file is to provide a 
- * SpringBootServletInitializer subclass and override its configure method.
+ * 	SpringBootServletInitializer subclass and override its configure method.
  *  Doing so makes use of Spring Framework’s Servlet 3.0 support and lets 
  *  you configure your application when it is launched by the servlet container. 
  *
